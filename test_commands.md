@@ -18,7 +18,6 @@ print('\n[LLM Test Start - Model: gemma2:2b]')
 print('질문: What is the capital of South Korea?')
 print('답변: ', end='', flush=True)
 
-## 스트리밍 응답 출력 테스트
 for chunk in llm_client.ask_question_stream('test_session_01', 'What is the capital of South Korea?'):
     print(chunk, end='', flush=True)
 
